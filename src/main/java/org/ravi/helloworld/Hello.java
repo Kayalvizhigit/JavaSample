@@ -4,7 +4,11 @@ public class Hello {
 	
 	public String displayHelloMessage(String message){
 		message = "hi Hello";
-		return message;
+	if(message != null && !message.isEmpty()){
+		msg=message;
+	}
+	else { msg="hi"; }
+		return msg;
 	}
 
 }
